@@ -9,10 +9,10 @@ app.use(cors());
 app.use(express.json());
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || "localhost",
-  user: process.env.DB_USER || "root",
+  host: process.env.DB_HOST || "srv1321.main-hosting.eu",
+  user: process.env.DB_USER || "u416405722_exxo",
   password: process.env.DB_PASS || "admin123",
-  database: process.env.DB_NAME || "exxo_pm",
+  database: process.env.DB_NAME || "u416405722_exxo_pm",
   port: Number(process.env.DB_PORT) || 3306,
   waitForConnections: true,
   connectionLimit: 10,
